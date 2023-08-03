@@ -13,12 +13,40 @@
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name a{
+  font-size: 16px;
+  color: darkred;
+  text-decoration: none;
+}
+
+.create-room a {
+  font-size: 10px;
+  border: 1px solid red;
+  padding: 14px;
+  color: rgb(237, 75, 11);
+  text-decoration: none;
 }
 
 .rooms {
   background-color: #eaa716;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
 }
 
 /* <メイン画面> */
@@ -40,7 +68,7 @@
 }
 
 .form {
-  background-color: #e74c09;
+  background-color: #e09737;
   height: 90px;
   padding: 20px 40px;
 }
